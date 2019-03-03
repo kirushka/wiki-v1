@@ -82,11 +82,11 @@ block content
               h2.subtitle= pageData.meta.subtitle
           .content.mkcontent(v-pre, class=[appconfig.theme.code.dark ? 'is-code-dark' : 'is-code-light'])
             != pageData.html
-            if pageData.meta.title.toLowerCase().includes("[bet]") 
-              .vote
-                a(class='button' href='https://google.com') Google
-                a(class='button is-teal' onclick='addVote()') &#x1f44d
-                .vote#votecouter 0
+          if pageData.meta.title.toLowerCase().includes("[bet]") 
+            .vote
+              a(class='button' href='https://google.com') Google
+              a.button.is-outlined(v-on:click='$store.dispatch("increment")') &#x1f44d
+              .vote-count {{ $store.state.voteCount }}
 
   modal-create-page(basepath=pageData.meta.path)
   modal-move-page(current-path=pageData.meta.path)
