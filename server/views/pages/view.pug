@@ -85,7 +85,8 @@ block content
             if pageData.meta.title.toLowerCase().includes("[bet]") 
               .vote
                 a(class='button' href='https://google.com') Google
-                button(type='button' class='button is-teal' value="Read More" onclick='console.log(1)') &#x1f44d
+                a(class='button is-teal' onclick='addVote()') &#x1f44d
+                .vote#votecouter 0
 
   modal-create-page(basepath=pageData.meta.path)
   modal-move-page(current-path=pageData.meta.path)

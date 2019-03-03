@@ -2,7 +2,7 @@
 
 <img src="https://beta.requarks.io/svg/logo.svg" alt="Wiki.js" width="375" />
 
-[![Release](https://img.shields.io/github/release/Requarks/wiki-v1.svg?style=flat&maxAge=3600)](https://github.com/Requarks/wiki/releases)
+[![Release](https://img.shields.io/github/release/Requarks/wiki.svg?style=flat&maxAge=3600)](https://github.com/Requarks/wiki/releases)
 [![License](https://img.shields.io/badge/license-AGPLv3-blue.svg?style=flat)](https://github.com/requarks/wiki/blob/master/LICENSE)
 [![Backers on Open Collective](https://opencollective.com/wikijs/backers/badge.svg)](#backers)
 [![Sponsors on Open Collective](https://opencollective.com/wikijs/sponsors/badge.svg)](#sponsors)
@@ -27,18 +27,11 @@
 - [Feature Requests](https://requests.requarks.io/wiki)
 - [Milestones](#milestones)
 - [Chat with us](#gitter)
+- [Donate](https://opencollective.com/wikijs)
 - [T-Shirts Shop](#t-shirts-shop)
 - [Translations](#translations) *(We need your help!)*
 - [Special Thanks](#special-thanks)
 - [Contribute](#contributors)
-
-<h2 align="center">Donate</h2>
-
-Wiki.js is an open source project that has been made possible due to the generous contributions by community [backers](https://github.com/Requarks/wiki/blob/master/BACKERS.md). If you are interested in supporting this project, please consider [becoming a patron](https://www.patreon.com/requarks) or donating to our [OpenCollective](https://opencollective.com/wikijs).
-
-<a href="https://www.patreon.com/requarks">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron" />
-</a>
 
 <h2 align="center">Requirements</h2>
 
@@ -75,12 +68,10 @@ Current and upcoming milestones *(major features only, see the [changelog](https
 
 :bookmark_tabs: See [project board](https://waffle.io/Requarks/wiki) to keep track of current progress.
 
-### 1.0.117 - Stable
-**Note**: As 2.0 is under development, no new features are being developed in the 1.0 branch.
-
-- [x] Fixed: Upgrade to patched Google auth module (Google+ deprecation)
-
 ### 1.0.102 - Stable
+![Progress](http://progressed.io/bar/100)
+
+**Note**: As 2.0 is under development, no new features are being developed in the 1.0 branch.
 
 - [x] Added: Open ID Connection provider (thanks to @sazulo)
 - [x] Added: Turkish locale is now available (thanks to @MrSimsek)

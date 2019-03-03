@@ -21,14 +21,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    loading: false
+    loading: false,
+    voteCount: 0
   },
   mutations: {
-    loadingChange: (state, loadingState) => { state.loading = loadingState }
+    loadingChange: (state, loadingState) => { state.loading = loadingState },
+    increment(state) {
+      state.voteCount ++;
+      console.log(state.voteCount);
+    }
   },
   actions: {
     startLoading({ commit }) { commit('loadingChange', true) },
-    stopLoading({ commit }) { commit('loadingChange', false) }
+    stopLoading({ commit }) { commit('loadingChange', false) },
+    increment(context) {context.commit('increment');}
   },
   getters: {},
   modules: {

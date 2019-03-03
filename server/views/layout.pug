@@ -21,6 +21,9 @@ html
     script.
       var siteLang = '!{appconfig.lang}';
       var siteRoot = '!{appconfig.host}';
+      
+    script  
+      include vote.js
 
     //- JS / CSS
     script(type='text/javascript', src=appconfig.host + '/js/vendor.js')
