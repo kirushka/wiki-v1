@@ -82,11 +82,15 @@ block content
               h2.subtitle= pageData.meta.subtitle
           .content.mkcontent(v-pre, class=[appconfig.theme.code.dark ? 'is-code-dark' : 'is-code-light'])
             != pageData.html
-          .vote
-            a(class='button' href='https://google.com') Google
-            button(type='button' class=' c-btn-blue c-btn-circle c-btn-uppercase' value="Read More" onclick='console.log(1)')
+            if pageData.meta.title.toLowerCase().includes("[bet]") 
+              .vote
+                a(class='button' href='https://google.com') Google
+                button(type='button' class='button is-teal' value="Read More" onclick='console.log(1)') &#x1f44d
 
   modal-create-page(basepath=pageData.meta.path)
   modal-move-page(current-path=pageData.meta.path)
   modal-delete-page(current-path=pageData.meta.path)
   anchor
+  
+  
+  
